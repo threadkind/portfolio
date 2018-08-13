@@ -1,0 +1,67 @@
+/* FONTS
+font-family: 'Amatic SC', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+:root {
+	--heading:'Amatic SC', cursive;
+	--paragraph:'Open Sans', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: var(--paragraph);
+	color: black;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+	font-family: var(--heading);
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 20vh 20vh 20vh 20vh 20vh 100vh 200vh 100vh;
+}
+
+nav {
+	grid-column: 1 / span 3;
+	grid-row: 4 / span 1;
+	font-family: var(--heading);
+	font-size: 3em;
+	align-self: end;
+}
+
+.navLinks {
+	width: 33%;
+	text-align: center;
+	float: left;
+}
+
+#hero {
+	grid-column: 1 / span 3;
+	grid-row: 1 / span 3;
+	width: 100vw;
+	height: 100%;
+	background: url("../images/hero.png") no-repeat;
+	background-size: contain;
+	background-position: center top;
+}
+
+#about {
+	grid-column: 1 / span 3;
+	grid-row: 6 / span 1;
+}
+
+#work {
+	grid-column: 1 / span 3;
+	grid-row: 7 / span 1;
+}
+
+#contact {
+	grid-column: 1 / span 3;
+	grid-row: 8 / span 1;
+}
