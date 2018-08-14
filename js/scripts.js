@@ -89,7 +89,7 @@ for (let i = 0; i < Object.values(projectObj).length; i++){
 	document.querySelector('#projects').innerHTML +=
 		`<div class="project">
             <img src="${image}">
-            <a href="${image}" target="_blank">
+            <a href="${url}" target="_blank">
               <div class="projectInfo hide">
                 <h2>${name}</h2><br>
                 <p>${description}</p><br>
