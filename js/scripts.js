@@ -113,3 +113,13 @@ document.querySelector('#projects').addEventListener('mouseout', function(e){
 	}
 });
 
+window.addEventListener('scroll', function(e){
+	if(window.scrollY > window.innerHeight){
+		document.querySelector('.backToTop').style.display = 'inline-block';
+	}
+	else {
+		document.querySelector('.backToTop').style.display = 'none';
+
+	}
+})
+
