@@ -24,14 +24,14 @@ h1, h2, h3, h4, h5, h6, li {
 main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 20vh 20vh 20vh 20vh 20vh 100vh 200vh 100vh;
+	grid-template-rows: 20vh 20vh 20vh 20vh 20vh 100vh auto 100vh;
 }
 
 nav {
 	grid-column: 1 / span 3;
 	grid-row: 4 / span 1;
 	font-family: var(--heading);
-	font-size: 3em;
+	font-size: 2.5em;
 	align-self: end;
 }
 
@@ -64,4 +64,48 @@ nav {
 #contact {
 	grid-column: 1 / span 3;
 	grid-row: 8 / span 1;
+}
+
+.sectionTitles {
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.imgContain {
+	width: 170px;
+	margin: 0 auto;
+}
+
+#amy {
+	margin: 4%;
+	border-radius: 50%;
+	justify-content: center;
+	box-shadow: 0 0 5px 3px grey;
+}
+
+#about p {
+	padding: 4%;
+}
+
+#projects {
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: center;
+}
+
+.project {
+	position: relative;
+	height: 275px;
+}
+
+.projectInfo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 250px;
+	height: 250px;
+	background: rgba(255, 102, 204, 0.4);
 }
