@@ -1,7 +1,7 @@
 if(window.innerWidth > window.innerHeight){
     document.getElementById('social').style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
-    document.querySelector('#about p').style.fontSize = "2.70vh";
 }
+
 
 const projectObj = {
 	feedReaderTesting: {
@@ -71,7 +71,7 @@ const projectObj = {
 		id: 'codevember',
 		name: 'Codevember 2017',
 		image: 'images/projects/codevember.png',
-		description: 'CodeVember is a challenge for developers creating a creative sketch a day in November',
+		description: 'CodeVember is a challenge for developers to make a creative sketch a day in November',
 		build: 'Built with HTML, CSS + Javascript',
 		url: 'http://portfolio.threadkind.com/codevember2017/index.html',
 		repo: 'https://github.com/threadkind/codevember2017'
