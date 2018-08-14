@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6, li {
 	font-family: var(--heading);
 }
 
+h1 {
+	font-size: 4em;
+}
+
 main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -83,7 +87,7 @@ nav {
 	box-shadow: 0 0 5px 3px grey;
 }
 
-#about p {
+#about p, #contact p {
 	padding: 4%;
 }
 
@@ -98,6 +102,12 @@ nav {
 .project {
 	position: relative;
 	height: 275px;
+	margin: 1%;
+}
+
+.project img {
+	width: 250px;
+	height: 250px;
 }
 
 .projectInfo {
@@ -109,3 +119,78 @@ nav {
 	height: 250px;
 	background: rgba(255, 102, 204, 0.4);
 }
+
+#contact p {
+	text-align: center;
+}
+
+#social {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+}
+
+#social a {
+	margin: 10%;
+}
+
+.socialButtons {
+	width: 100px;
+	height: 100px;
+}
+
+.github {
+	background: url(../images/github.png) no-repeat;
+	background-size: contain;
+}
+.instagram {
+	background: url(../images/instagram.png) no-repeat;
+	background-size: contain;
+}
+.codepen {
+	background: url(../images/codepen.png) no-repeat;
+	background-size: contain;
+}
+.linkedIn {
+	background: url(../images/linkedin.png) no-repeat;
+	background-size: contain;
+}
+
+/* M E D I A    Q U E R I E S */
+
+@media screen and (min-width: 750px) {
+	.navLinks {
+		font-size: 2em;
+	}
+
+	p {
+		font-size: 1.25em;
+	}
+
+	.project {
+		width: 325px;
+		height: 325px;
+	}
+
+	.project img {
+		width: 300px;
+		height: 300px;
+	}
+
+	.projectInfo {
+		width: 300px;
+		height: 300px;
+	}
+
+	.projectInfo h2 {
+		font-size: 3em;
+	}
+
+	.socialButtons {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
