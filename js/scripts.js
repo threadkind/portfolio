@@ -1,4 +1,4 @@
-if(window.innerWidth > window.innerHeight){
+if(window.innerWidth >= window.innerHeight){
     document.getElementById('social').style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
 }
 
@@ -67,6 +67,33 @@ const projectObj = {
 		url: 'http://portfolio.threadkind.com/schedule/index.html',
 		repo: 'https://github.com/threadkind/schedule'
 	},
+	productSite: {
+		id: 'productSite',
+		name: 'Product Site',
+		image: 'images/projects/product-site.jpg',
+		description: 'A product site showcasing various courses offered by a company.',
+		build: 'Built with HTML, CSS + Javascript',
+		url: 'http://portfolio.threadkind.com/30days30sites/04ProductSite/index.html',
+		repo: 'https://github.com/threadkind/30days30sites'
+	},
+	touristAttractionSite: {
+		id: 'touristAttractionSite',
+		name: 'Tourist Attraction Site',
+		image: 'images/projects/tourist-attraction.jpg',
+		description: 'A responsive site showing information about Mount Rushmore.',
+		build: 'Built with HTML, CSS + Javascript',
+		url: 'http://portfolio.threadkind.com/30days30sites/03TouristAttraction/index.html',
+		repo: 'https://github.com/threadkind/30days30sites'
+	},
+	restaurantMenu: {
+		id: 'bedtimeGame',
+		name: 'Restaurant Menu',
+		image: 'images/projects/menu.jpg',
+		description: 'A mock-up of a responsive restaurant menu website.',
+		build: 'Built with HTML, CSS + Javascript',
+		url: 'http://portfolio.threadkind.com/30days30sites/05RestaurantMenu/index.html',
+		repo: 'https://github.com/threadkind/30days30sites'
+	},
 	codevember: {
 		id: 'codevember',
 		name: 'Codevember 2017',
@@ -85,6 +112,7 @@ for (let i = 0; i < Object.values(projectObj).length; i++){
 	const description = Object.values(projectObj)[i].description;
 	const build = Object.values(projectObj)[i].build;
 	const url = Object.values(projectObj)[i].url;
+	const repo = Object.values(projectObj)[i].repo;
 
 	document.querySelector('#projects').innerHTML +=
 		`<div class="project">
@@ -92,11 +120,17 @@ for (let i = 0; i < Object.values(projectObj).length; i++){
             <a href="${url}" target="_blank">
               <div class="projectInfo hide">
                 <h2>${name}</h2><br>
-                <p>${description}</p><br>
+                <p>${description}</p>
                 <p>${build}</p>
               </div>
             <div class="overlay"></div>
-          </div>`
+            <div class="repo">
+                	<a href="${repo}" target="_blank">View
+                		<span class="repoImg"></span>
+                Code</a></div>
+          </div>
+
+`
 
 };
 
@@ -114,7 +148,7 @@ document.querySelector('#projects').addEventListener('mouseout', function(e){
 });
 
 window.addEventListener('scroll', function(e){
-	if(window.scrollY > window.innerHeight){
+	if(window.scrollY >= (window.innerHeight - 100)){
 		document.querySelector('.backToTop').style.display = 'inline-block';
 	}
 	else {

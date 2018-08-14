@@ -135,7 +135,7 @@ nav {
 	left: 0;
 	width: 250px;
 	height: 250px;
-	z-index: 10;
+	z-index: 2;
 }
 
 #contact p {
@@ -175,6 +175,23 @@ nav {
 	background-size: contain;
 }
 
+.repo {
+	width: 250px;
+	background: white;
+	display: flex;
+	justify-content: center;
+}
+.repo a {
+}
+
+.repoImg {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/github.png);
+	background-size: contain;
+}
+
 .backToTop {
 	display: none;
 	position: fixed;
@@ -184,8 +201,9 @@ nav {
 	border-radius: 4px;
 	padding: 2px;
 	box-shadow: 0 0 5px grey;
-	z-index: 12;
+	z-index: 4;
 }
+
 
 .backToTop a {
 	font-family: var(--heading);
@@ -206,6 +224,7 @@ nav {
 	.project {
 		width: 325px;
 		height: 325px;
+		margin-bottom: 4%;
 	}
 
 	.overlay {
@@ -225,6 +244,10 @@ nav {
 
 	.projectInfo h2 {
 		font-size: 3em;
+	}
+
+	.repo {
+		width: 300px;
 	}
 
 	.socialButtons {
