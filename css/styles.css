@@ -76,11 +76,13 @@ nav {
 }
 
 .imgContain {
-	width: 170px;
+	max-width: 170px;
+	width: 25vw;
 	margin: 0 auto;
 }
 
 #amy {
+	width: 100%;
 	margin: 4%;
 	border-radius: 50%;
 	justify-content: center;
@@ -89,7 +91,7 @@ nav {
 
 #about p, #contact p {
 	padding: 4%;
-	font-size: 2vh;
+	font-size: 2.2vh;
 }
 
 #projects {
