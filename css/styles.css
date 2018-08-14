@@ -108,6 +108,7 @@ nav {
 .project img {
 	width: 250px;
 	height: 250px;
+	box-shadow: 0 0 5px grey;
 }
 
 .projectInfo {
@@ -117,7 +118,21 @@ nav {
 	text-align: center;
 	width: 250px;
 	height: 250px;
-	background: rgba(254, 188, 0, 0.4);
+	background: rgba(255,204,224,0.9);
+
+}
+
+.hide {
+	display: none;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 250px;
+	z-index: 10;
 }
 
 #contact p {
@@ -173,6 +188,11 @@ nav {
 		height: 325px;
 	}
 
+	.overlay {
+		width: 300px;
+		height: 300px;
+	}
+
 	.project img {
 		width: 300px;
 		height: 300px;
@@ -193,4 +213,3 @@ nav {
 	}
 }
 
-@media screen and (min-width: 1000px) {
