@@ -224,7 +224,13 @@ nav {
 	.project {
 		width: 325px;
 		height: 325px;
-		margin-bottom: 4%;
+		margin-bottom: 5vh;
+	}
+
+	#projectIntro {
+		font-size: 3vh;
+		text-align: center;
+		margin-bottom: 3vh;
 	}
 
 	.overlay {

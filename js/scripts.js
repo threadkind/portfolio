@@ -2,6 +2,18 @@ if(window.innerWidth >= window.innerHeight){
     document.getElementById('social').style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
 }
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	document.querySelector('#projectIntro').innerText =
+	`Click once to learn more about the project.
+    Click a second time to open up the project in another tab.
+	Click the 'View Repo' link to view the projects code on GitHub.
+	`;
+}
+else {
+	document.querySelector('#projectIntro').innerText =
+	`Hover on the thumbnail to learn more about the project.
+	Click to open up the project in another tab.
+	Click the view repo link to view the projects code on GitHub.`}
 
 const projectObj = {
 	feedReaderTesting: {
